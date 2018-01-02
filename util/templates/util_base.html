@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'util/style.css' %}"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>{% block title %}信泓{% endblock %}</title>
+</head>
+<body>
+<nav>
+    <a href="">欢迎页</a>
+    <a href="">服务列表</a>
+    <a href="">团队成员</a>
+    <a href="">欢迎页</a>
+    <a href="">服务列表</a>
+    <a href="">团队成员</a>
+</nav>
+<div>
+    {% block content %}去别处看看吧{% endblock %}
+</div>
+</body>
+</html>

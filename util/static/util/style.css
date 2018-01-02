@@ -1,0 +1,27 @@
+body{
+    background-attachment:fixed;
+    background: url('bg_util.jpg');
+    color: white;
+    background-size:cover;
+}
+
+a:link {text-decoration:none;}
+
+a {
+    color:white;
+    border-radius: 3px;
+    padding: 8px;
+    background-color: rgba(255,255,255,0.3);
+    display: block;
+    float:left;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+nav {
+    padding: 8px;
+}
+
+div{
+    clear: left;
+}
