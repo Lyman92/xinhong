@@ -23,5 +23,15 @@ nav {
 }
 
 div{
+    background-color: white;
     clear: left;
+    color: black;
+    padding: 8px;
+    margin: 16px 8px;
+    border-radius: 3px;
+}
+
+input {
+    display: block;
+    margin: 8px;
 }

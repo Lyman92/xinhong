@@ -1,3 +1,12 @@
 {% extends "util_base.html" %}
 
 {% block title %}管理工具{% endblock %}
+
+{% block content %}
+<form method="post" action="{% url 'setFlash' %}">
+    {% csrf_token %}
+    页面标题<input type="text" placeholder="页面标题" name="title" value="{{ title }}">
+    <!--<input type="file" placeholder="选择图片">-->
+    <input type="submit" value="提交">
+</form>
+{% endblock %}
