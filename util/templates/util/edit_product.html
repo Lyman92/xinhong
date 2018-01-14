@@ -1,0 +1,16 @@
+{% extends "util_base.html" %}
+
+{% block title %}编辑产品{% endblock %}
+
+{% block content %}
+<span class="status_s">{{ msg }}</span>
+<form action="{% url 'edit_product' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+    <img src="{{ img_bg }}" alt="产品背景" width="36%"><br />
+    <input type="hidden" name="id" value="{{ id }}">
+    <input class="btn" type="submit" value="提交">
+</form>
+
+
+{% endblock %}

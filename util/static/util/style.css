@@ -1,37 +1,77 @@
 body{
-    background-attachment:fixed;
     background: url('bg_util.jpg');
     color: white;
-    background-size:cover;
+}
+
+body,ul{
+    margin:0;
+    padding:0;
+}
+
+ul{
+    list-style:none;
 }
 
 a:link {text-decoration:none;}
 
-a {
+nav.util {
+    padding: 8px;
+}
+
+a,input.btn {
     color:white;
     border-radius: 3px;
     padding: 8px;
+	background-color: #666;
+    display: inline-block;
+}
+
+nav.util a {
     background-color: rgba(255,255,255,0.3);
-    display: block;
-    float:left;
-    margin-right: 8px;
-    margin-bottom: 8px;
+    margin:0 8px 8px 0;
 }
 
-nav {
-    padding: 8px;
-}
-
-div{
+div.main{
     background-color: white;
-    clear: left;
     color: black;
     padding: 8px;
     margin: 16px 8px;
     border-radius: 3px;
 }
 
-input {
+input{
+    border-width:1px;
+}
+
+input,label {
     display: block;
     margin: 8px;
+    padding: 0;
+}
+
+.ul_util_products{
+
+}
+
+.ul_util_products li{
+    font-size:20px;
+    border:1px solid #888;
+    border-radius: 3px;
+    margin: 10px 0;
+    padding: 8px;
+    overflow:hidden;
+}
+
+.ul_util_products li .small{
+    font-size: 12px;
+}
+
+.ul_util_products li .btn_edit{
+    float:right;
+    font-size:16px;
+    display:inline-block;
+}
+
+.status_s{
+    color: rgb(0,200,83);
 }

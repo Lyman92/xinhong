@@ -2,23 +2,27 @@
 <html>
 <head>
     {% load static %}
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'util/style.css' %}"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>{% block title %}信泓{% endblock %}</title>
 </head>
 <body>
-<nav>
-    <a href="">欢迎页</a>
-    <a href="">服务列表</a>
+<nav class="util">
+    <a href="{% url 'index' %}">欢迎页</a>
+    <a href="{% url 'products' %}">服务列表</a>
     <a href="">团队成员</a>
 </nav>
-<div style="background-color:rgba(0,0,0,0)">
 
-</div>
-
-<div>
+<div class="main">
     {% block content %}去别处看看吧{% endblock %}
 </div>
+
+<script>
+
+    {% block js %} {% endblock %}
+</script>
 </body>
 </html>

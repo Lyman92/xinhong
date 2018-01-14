@@ -1,0 +1,25 @@
+{% extends "util_base.html" %}
+
+{% block title %}产品管理{% endblock %}
+
+{% block content %}
+<a href="{% url 'edit_product' %}">新建产品</a>
+
+<ul class="ul_util_products">
+{% for item in products %}
+    <li>
+        {{ item.title_big }} <span class="small">{{ item.title_after_big }}</span>
+        <br />
+        <span class="small">{{ item.title_small }}</span>
+        <br />
+        <span class="small"> 排位：{{ item.ordering }}</span>
+
+        <div class="btn_edit">
+            <a href="edit/?id={{ item.id }}">修改</a>
+            <a href="">删除</a>
+        </div>
+    </li>
+{% endfor %}
+</ul>
+
+{% endblock %}
