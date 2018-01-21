@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    {% load static %}
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script>{% block js %} {% endblock %}</script>
+    <style type="text/css">{% block css %} {% endblock %}</style>
+    <link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>{% block title %}信泓{% endblock %}</title>
+</head>
+<body>
+	<div class="mobile">
+		
+			<input type="checkbox" id="tm">
+			
+			<!-- menu -->
+			<ul class="sidenav">
+				<li><a href="{% url 'main_index' %}"><b>产&nbsp;&nbsp;品</b></a></li>
+				<li><a href="{% url 'main_contact_us' %}"><b>联系我们</b></a></li>
+			</ul>
+
+			<section id="section_main">
+				<div class="main_menu">
+					<label for="tm">
+						<img class="ic_menu" src="{% static 'main/ic_menu.png' %}" alt="menu">
+					</label>
+				</div>
+
+				<div class="content">
+				    {% block content %}去别处看看吧{% endblock %}
+				</div>
+
+			</section>
+		
+		
+	</div>
+</body>
+</html>

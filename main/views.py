@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Product
+from xinhong.slider.models import Slider
 from xinhong.helpers import Helpers
 
 
@@ -17,3 +18,19 @@ def index(request):
     context['imgs'] = arr_img
     print(arr_img)
     return render(request, 'main/index.html', context)
+
+
+def welcome(request):
+    context = {'title': ''}
+    slider = Slider()
+    try:
+        slider = Slider.objects.all()[0]
+    except:
+        pass
+    context['title'] = slider.name
+    context['img'] = Helpers.get_cloud_file_url(slider.image)
+    return render(request, 'main/welcome.html', context)
+
+
+def contact_us(request):
+    return render(request, 'main/main_contact_us.html')

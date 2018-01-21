@@ -1,0 +1,44 @@
+{% extends 'main/main_base.html' %}
+{% load static %}
+{% block title %}联系我们{% endblock %}
+
+{% block css %}
+#qrcode{
+display: inline-block;
+margin: 1em auto;
+}
+
+.content{
+    text-align: center;
+}
+
+.content div{
+    text-align: left;
+    display:inline-block;
+}
+
+.content p span{
+    font-size: 20px;
+}
+
+{% endblock %}
+
+{% block content %}
+<div>
+    <img id="qrcode" src="{% static 'main/nba.png' %}" alt="二维码">
+
+    <p>
+        联系电话:<span> 18366668888 </span>
+    </p>
+
+    <p>
+        微信号:<span> 18366668888 </span>
+    </p>
+
+    <p>
+        qq号:<span> 18366668888 </span>
+    </p>
+</div>
+
+
+{% endblock %}
