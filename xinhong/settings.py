@@ -118,10 +118,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, "static"),
+# ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-]
 
 QINIU_DOMAIN = 'http://p1tbqu4i5.bkt.clouddn.com/'
 QINIU_ACCESS_KEY = '2hlwAyoPtBHVKU1i4lV6FuSiPhfGGVLvvqKG4zC2'

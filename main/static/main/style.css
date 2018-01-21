@@ -1,0 +1,81 @@
+body,ul{
+    margin: 0;
+    padding: 0;
+}
+
+div.main_menu{
+    height:4%;
+    padding:3% 1em;
+    background-color:#eee;
+}
+
+div.content{
+    height:90%;
+}
+
+#section_main{
+	height: 100%;
+}
+
+.ic_menu {
+    width:24px;
+    height:24px;
+}
+
+.mobile {
+	float: left; position: relative;
+	overflow: hidden;
+	height: 100%;
+	width:100%;
+}
+
+#tm {
+	display: none;
+}
+
+/*Nav styles*/
+.sidenav {
+	width: 150px;
+	position: absolute; 
+	left: 0; 
+	top: 3em; 
+	bottom: 0;
+}
+
+.sidenav li {
+	list-style-type: none;
+	text-align: center;
+	border-bottom-width: 1px;
+	border-color: gray;
+}
+
+.sidenav a { 
+	display: inline-block;
+	text-decoration: none; 
+}
+
+.sidenav b {
+	font: bold 16px/60px Montserrat; 
+	display: inline-block;
+	color: #666;
+	opacity: 0; 
+	transform: translateX(50px); 
+	transition: all 0.4s;
+}
+
+/*Animation controls using checkbox hack*/
+/*Animate content area to the right*/
+#tm:checked ~ section {
+	transform: translateX(150px);
+}
+
+/*Animate links from right to left + fade in effect*/
+#tm:checked ~ .sidenav b {
+	opacity: 1; 
+	transform: translateX(0);
+}
+
+/*Adding delay to link animation - in multiples of .08s*/
+/*One can use jQuery also for creating the delayed effect. But I will stick to manual CSS for this walkthrough.*/
+#tm:checked ~ .sidenav li:nth-child(1) b {transition-delay: 0.08s;}
+#tm:checked ~ .sidenav li:nth-child(2) b {transition-delay: 0.16s;}
