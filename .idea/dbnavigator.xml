@@ -16,7 +16,7 @@
       <scope value="GLOBAL" />
       <destination value="FILE" />
       <format value="EXCEL" />
-      <charset value="GBK" />
+      <charset value="UTF-8" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -24,19 +24,18 @@
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
     <loaded-nodes>
-      <connection connection-id="b583c070-e2f3-49ff-99d6-f87db608d10d">
-        <schema name="xinhong" object-types="column, function, procedure, table, view" />
+      <connection connection-id="879df360-5d3e-4e12-a65c-a7ac8a116948">
+        <schema name="xinhong" object-types="column, constraint, function, index, procedure, table, dataset trigger, view" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="b583c070-e2f3-49ff-99d6-f87db608d10d">
+    <connection id="879df360-5d3e-4e12-a65c-a7ac8a116948">
       <console name="Connection" type="STANDARD" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-list connection-id="b583c070-e2f3-49ff-99d6-f87db608d10d" dataset="xinhong.main_product" active-filter-id="EMPTY_FILTER" />
-    <filter-list connection-id="b583c070-e2f3-49ff-99d6-f87db608d10d" dataset="xinhong.slider_slider" active-filter-id="EMPTY_FILTER" />
+    <filter-list connection-id="879df360-5d3e-4e12-a65c-a7ac8a116948" dataset="xinhong.main_product" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -61,7 +60,7 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="b583c070-e2f3-49ff-99d6-f87db608d10d" active="true">
+      <connection id="879df360-5d3e-4e12-a65c-a7ac8a116948" active="true">
         <database>
           <name value="Connection" />
           <description value="" />
@@ -77,7 +76,7 @@
           <database value="mysql" />
           <os-authentication value="false" />
           <empty-password value="false" />
-          <user value="lyman" />
+          <user value="root" />
           <password value="Y2xtNTYyNzEyMA==" />
         </database>
         <properties>

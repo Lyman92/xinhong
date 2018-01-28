@@ -1,3 +1,5 @@
+import json
+
 from django.shortcuts import render
 from .models import Product
 from xinhong.slider.models import Slider
@@ -16,8 +18,33 @@ def index(request):
         pass
     context['products'] = product_set
     context['imgs'] = arr_img
-    print(arr_img)
     return render(request, 'main/index.html', context)
+
+
+def product_content(request, id):
+    context = {'': ''}
+    product = Product()
+    contents = []
+    structure = []  # 数组值为0是图片,为1是文字
+    try:
+        product = Product.objects.filter(id=id)[0]
+    except:
+        pass
+    str = product.contents
+    try:
+        contents = json.loads(str)
+        for index in range(0, len(contents)):
+            if Helpers.is_img_string(contents[index]):
+                contents[index] = Helpers.get_cloud_file_url(contents[index])
+                structure.append(0)
+            else:
+                structure.append(1)
+    except:
+        pass
+    print(structure)
+    context['contents'] = contents
+    context['structure'] = structure
+    return render(request, 'main/main_product_content.html', context)
 
 
 def welcome(request):

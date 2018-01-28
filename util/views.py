@@ -1,4 +1,6 @@
+import json
 from django.shortcuts import render
+from django.http import HttpResponse
 from datetime import date
 
 from xinhong.slider.models import Slider
@@ -101,3 +103,28 @@ def edit_product(request):
     context['img_bg'] = Helpers.get_cloud_file_url(product.img_bg)
     context['msg'] = msg
     return render(request, 'util/edit_product.html', context)
+
+
+def edit_product_content(request):
+    context = {'': ''}
+    product_id = '-1'
+    if request.method == 'GET':
+        product_id = request.GET['id']
+    else:  # POST
+        try:
+            product_id = request.POST['id']
+            print(product_id)
+            product = Product.objects.filter(id=product_id)[0]
+            product.contents = request.POST['contents']
+            print(request.POST['contents'])
+            product.save()
+        except:
+            print('err')
+    context['id'] = product_id
+    return render(request, 'util/edit_product_content.html', context)
+
+
+def get_uptoken(request):
+    token = Helpers.get_uptoken(None)
+    resp = {'uptoken': token}
+    return HttpResponse(json.dumps(resp), content_type="application/json")

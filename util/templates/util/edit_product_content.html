@@ -1,0 +1,71 @@
+{% extends "util_base.html" %}
+{% load static %}
+{% block title %}产品内容{% endblock %}
+{% block js %}
+var uploader;
+var arrContents=[];
+var arrImgName=[];
+$(function(){
+	uploader = Qiniu.uploader(getOption('btn_add_img',{{ id }}));
+});
+
+// function img_chosen(x){
+// 	//取出选择的图片
+//     var fileInput = x.files[0];
+//     //判断是否选择了图片
+//     if(x.files && x.files[0]) {
+//         var reader = new FileReader();
+//         reader.onload = function(e) {
+//             //此处得到是图片的base64编码数据
+//             var img_url = e.target.result;
+
+//            	arrContents.push(img_url);
+//            	console.log(arrContents);
+            
+//             console.log(cloud_file_name);
+//             upload_img(cloud_file_name, id_img);
+//         };
+//         reader.readAsDataURL(x.files[0]);
+//     }
+// }
+
+function add_text_area() {
+	var text_area=$("<textarea></textarea>");
+	text_area.attr("class", "textarea_para");
+	text_area.html()
+	$("#div_content_contaner").append(text_area);
+}
+
+// function add_image(){
+//     var tag_img=$("<img></img>");
+//     // tag_img.attr("src", img_url);
+//     tag_img.attr("class", "image_product_content");
+//     var id_img = 'img_content'+arrContents.length;
+//     tag_img.attr("id", id_img);
+//     $("#div_content_contaner").append(tag_img);
+//     var cloud_file_name = get_file_name(arrContents.length);
+// 	$("#"+id_img).click();
+// }
+// var uploader = init_uploader(get_file_name(0), get_id_img(0));
+function submit(){
+	uploader.start();
+}
+
+
+
+
+{% endblock %}
+
+{% block content %}
+<span class="status_s">{{ msg }}</span>
+<input id="uptoken_url" type="hidden" value="{% url 'get_uptoken' %}?name=">
+<input type="hidden" name="key" value="get_file_name(-1)">
+
+<!--<input id="input_img" type="file" accept="image/*" style="display: none;" onchange="img_chosen(this)">-->
+<div id="div_content_contaner">
+</div>
+<button onclick="add_text_area()">添加段落</button>
+<button id="btn_add_img">添加图片</button>
+<button id="btn_submit" onclick="submit()">提交</button>
+
+{% endblock %}
