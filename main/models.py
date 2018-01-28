@@ -10,6 +10,7 @@ class Product(models.Model):
     img_bg = models.CharField(max_length=200)
     link = models.CharField(max_length=200)
     ordering = models.IntegerField(default=1)
+    contents = models.CharField(max_length=4096, default='')
 
     def __str__(self):
         return self.title_big

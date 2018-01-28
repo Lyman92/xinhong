@@ -3,7 +3,12 @@
 <head>
     {% load static %}
     <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/qiniu.min.js' %}"></script>
+    <script src="{% static 'js/qiniu-ini.js' %}"></script>
+    <script src="{% static 'js/plupload/moxie.js' %}"></script>
+    <script src="{% static 'js/plupload/plupload.dev.js' %}"></script>
     <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script>{% block js %} {% endblock %}</script>
     <link rel="stylesheet" type="text/css" href="{% static 'util/style.css' %}"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -12,17 +17,14 @@
 <body class="util">
 <nav class="util">
     <a href="{% url 'index' %}">欢迎页</a>
-    <a href="{% url 'products' %}">服务列表</a>
-    <a href="">团队成员</a>
+    <a href="{% url 'products' %}">产品管理</a>
+    <a href="">联系管理</a>
 </nav>
 
 <div class="main">
     {% block content %}去别处看看吧{% endblock %}
 </div>
 
-<script>
 
-    {% block js %} {% endblock %}
-</script>
 </body>
 </html>

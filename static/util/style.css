@@ -18,7 +18,7 @@ nav.util {
     padding: 8px;
 }
 
-a,input.btn {
+a,input.btn,button {
     color:white;
     border-radius: 3px;
     padding: 8px;
@@ -74,4 +74,17 @@ input,label {
 
 .status_s{
     color: rgb(0,200,83);
+}
+
+.textarea_para{
+    display: block;
+    margin: 1em;
+    border:1px solid gray;
+}
+
+.image_product_content{
+    display: block;
+    width: 50%;
+    border-width: 1px;
+    border-color: gray;
 }

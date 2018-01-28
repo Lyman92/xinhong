@@ -1,0 +1,29 @@
+{% extends "main/main_base.html" %}
+{% load static %}
+{% block css %}
+.content_img{
+	width:100%;
+}
+
+.content_text{
+	margin: 1em;
+	text-indent: 2em;
+}
+
+{% endblock %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+
+{% for item in contents %}
+    {% load index_in_template %}
+    {% if structure|get_index:forloop.counter0 == 0 %}
+		<img class="content_img" src="{{ item }}" alt="图片">
+    {% else %}
+    	<p class="content_text">{{ item }}</p>
+    {% endif %}
+{% endfor %}
+
+
+{% endblock %}
