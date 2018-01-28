@@ -2,36 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53138a93-b3d7-40e8-a042-b085fcd54ee8" name="Default" comment="product contents">
-      <change beforePath="" afterPath="$PROJECT_DIR$/main/migrations/0002_product_contents.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/main/templates/main/main_product_content.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/main/templatetags/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/main/templatetags/index_in_template.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plupload/moxie.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plupload/plupload.dev.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/qiniu-ini.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/qiniu.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/temp.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/util/static/js/plupload/moxie.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/util/static/js/plupload/plupload.dev.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/util/static/js/qiniu-ini.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/util/static/js/qiniu.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/util/templates/util/edit_product_content.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/main/models.py" afterPath="$PROJECT_DIR$/main/models.py" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/index.html" afterPath="$PROJECT_DIR$/main/templates/main/index.html" />
-      <change beforePath="$PROJECT_DIR$/main/urls.py" afterPath="$PROJECT_DIR$/main/urls.py" />
-      <change beforePath="$PROJECT_DIR$/main/views.py" afterPath="$PROJECT_DIR$/main/views.py" />
-      <change beforePath="$PROJECT_DIR$/static/util/style.css" afterPath="$PROJECT_DIR$/static/util/style.css" />
-      <change beforePath="$PROJECT_DIR$/util/static/util/style.css" afterPath="$PROJECT_DIR$/util/static/util/style.css" />
-      <change beforePath="$PROJECT_DIR$/util/templates/util/edit_product.html" afterPath="$PROJECT_DIR$/util/templates/util/edit_product.html" />
-      <change beforePath="$PROJECT_DIR$/util/templates/util/products.html" afterPath="$PROJECT_DIR$/util/templates/util/products.html" />
-      <change beforePath="$PROJECT_DIR$/util/templates/util_base.html" afterPath="$PROJECT_DIR$/util/templates/util_base.html" />
-      <change beforePath="$PROJECT_DIR$/util/urls.py" afterPath="$PROJECT_DIR$/util/urls.py" />
-      <change beforePath="$PROJECT_DIR$/util/views.py" afterPath="$PROJECT_DIR$/util/views.py" />
-      <change beforePath="$PROJECT_DIR$/xinhong/helpers.py" afterPath="$PROJECT_DIR$/xinhong/helpers.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -222,86 +193,6 @@
               <item name="xinhong" type="b2602c69:ProjectViewProjectNode" />
               <item name="xinhong" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="xinhong" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xinhong" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xinhong" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xinhong" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xinhong" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xinhong" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xinhong" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xinhong" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="templatetags" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xinhong" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xinhong" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xinhong" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xinhong" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xinhong" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xinhong" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xinhong" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xinhong" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xinhong" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xinhong" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="plupload" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xinhong" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xinhong" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xinhong" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xinhong" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xinhong" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xinhong" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xinhong" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xinhong" type="462c0819:PsiDirectoryNode" />
-              <item name="xinhong" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -423,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516540964909</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="product contents">
+      <created>1517137198876</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1517137198876</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -438,14 +336,14 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
     <layout>
-      <window_info id="TODO" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32886904" sideWeight="0.49682286" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.49682286" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33637807" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32886904" sideWeight="0.5031771" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3497024" sideWeight="0.5413026" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33035713" sideWeight="0.45949167" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30059522" sideWeight="0.4936508" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35714287" sideWeight="0.48888007" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3497024" sideWeight="0.46028593" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3497024" sideWeight="0.45869738" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16362192" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961783" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
