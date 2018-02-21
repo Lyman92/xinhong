@@ -1,6 +1,7 @@
 body,ul{
     margin: 0;
     padding: 0;
+    font: normal 14px/18px "microsoft yahei";
 }
 
 div.main_menu{
@@ -10,7 +11,7 @@ div.main_menu{
 }
 
 div.content{
-    height:90%;
+    height:93%;
 }
 
 #section_main{

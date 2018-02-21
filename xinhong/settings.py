@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '4g^mv8()95!7jmb^552&9839-p79m%x*f2w3ppw%=lez^gl*s_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['xinhong.org.cn', 'www.xinhong.org.cn', 'm.xinhong.org.cn', 'lyman.pythonanywhere.com', '127.0.0.1', '120.78.193.59']
 
