@@ -15,23 +15,29 @@
 
 .content div{
     text-align: left;
-    display:inline-block;
 }
 
 .content div h2 {
     height: 36px;
     text-align: left;
-    position: relative;
     line-height: 36px;
     font-size: 26px;
-    display: inline-block;
     font-weight: normal;
-    margin: 0 1em;
-    padding: 0;
+    margin: 1em 0 0;
+    padding: 0 1em;
+}
+
+.content div p{
+    margin-left:2em;
+    padding-top:1em;
+    color: gray;
 }
 
 .content p span{
     font-size: 20px;
+    color: black;
+    position: absolute;
+    left: 5em;
 }
 
 {% endblock %}
@@ -40,17 +46,20 @@
     <div>
         <h2>香港信泓贸易国际有限公司</h2>
         <h2>联系方式</h2>
-        <p>
-            联系电话:<span> 18366668888 </span>
-        </p>
+        <div style="margin-top:3em;position:relative;">
+            <p>
+                联系人:<span>&emsp; Perry Ng</span>
+            </p>
 
-        <p>
-            微信号:<span> 18366668888 </span>
-        </p>
+            <p>
+                手机号:<span>&emsp; 13391030807</span>
+            </p>
 
-        <p>
-            qq号:<span> 18366668888 </span>
-        </p>
+            <p>
+                Email:<span>&emsp; 1758875800@qq.com</span>
+            </p>
+        </div>
+
 </div>
 
 
