@@ -79,7 +79,7 @@ DATABASES = {
         'NAME': 'xinhong',
         'USER': 'lyman',
         'PASSWORD': 'clm5627120',
-        'HOST': 'localhost'
+        'HOST': '/var/run/mysqld/mysqld.sock'
     }
 }
 
