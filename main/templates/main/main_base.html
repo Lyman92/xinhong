@@ -4,14 +4,18 @@
     {% load static %}
     <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
     <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
-    <script>{% block js %} {% endblock %}</script>
+    <script>
+    function onload(){
+        $('#tm').prop("checked", false);
+    }
+    {% block js %} {% endblock %}</script>
     <style type="text/css">{% block css %} {% endblock %}</style>
     <link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>{% block title %}信泓{% endblock %}</title>
 </head>
-<body>
+<body onload="onload()">
 	<div class="mobile">
 		
 			<input type="checkbox" id="tm">
